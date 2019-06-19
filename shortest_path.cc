@@ -51,8 +51,7 @@ Graph::Graph(const char *graphFile, int src, int dst, int &numVert) {
     exit(1);
   }
 
-  if(!(file>>numVert))
-  {
+  if(!(file>>numVert)) {
     std::cerr << "Error: invalid graph size" << std::endl;
     exit(1);
   }
